@@ -54,13 +54,13 @@ app.post('/webhook/', function (req, res) {
 
 // recommended to inject access tokens as environmental variables, e.g.
 // const token = process.env.FB_PAGE_ACCESS_TOKEN
-const token = "<FB_PAGE_ACCESS_TOKEN>"
+const token = "EAACaTM4n1JsBAHyUI75mods0I65q8ZA6GAJZA5ZAsfqoZBY0beaVu93Llkrh5KAkHDRzU1qntd0uNbaUsz2pcxCsHInLpu8h1tZBwiIsa5B7Rs3ZAooJUOopQZBY65hYfx2COXjeBZCd50LCFEPwX8CJ4sPXzwoNUMumoTmOvkHUVE24Fj2t5ZA5M"
 
 function sendTextMessage(sender, text) {
 	let messageData = { text:text }
 	
 	request({
-		url: 'https://graph.facebook.com/v2.6/me/messages',
+		url: 'https://www.facebook.com/ITUagentchatbot-177042619686071',
 		qs: {access_token:token},
 		method: 'POST',
 		json: {
@@ -109,7 +109,7 @@ function sendGenericMessage(sender) {
 		}
 	}
 	request({
-		url: 'https://graph.facebook.com/v2.6/me/messages',
+		url: 'https://www.facebook.com/ITUagentchatbot-177042619686071',
 		qs: {access_token:token},
 		method: 'POST',
 		json: {
